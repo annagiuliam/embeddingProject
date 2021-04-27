@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    font-family: Arial, sans-serif;
     
 }
 header {
@@ -14,20 +15,24 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-section {
+.left-section {
+    margin-right: 20px;
     height: 100%;
-    width: 70%;
+    width: 50%;
     background-color: lightgrey;
 }
 
 .video-container {
-    position: relative;
+position: relative;
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
+  max-width: 1076px;
+  max-height: 605px;
+  
 }
 
 iframe {
@@ -39,10 +44,45 @@ iframe {
     width: 100%;
     height: 100%;
     
+    
+}
+
+.video-title {
+    
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-stats {
+    font-size: 14px;
+    color: darkgrey
+}
+
+
+
+.actions-container, .actions-btn {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   color: darkgrey
+}
+
+.actions-btn span {
+    font-size: 15px;
+    margin-right: 15px;
 }
 
 aside {
     height: 100%;
-    width: 25%;
+    width: 15%;
     background-color: lightpink;
 }
+
