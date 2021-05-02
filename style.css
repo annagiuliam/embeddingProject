@@ -24,6 +24,12 @@ header {
     margin-right: 15px
 }
 
+.header-icon:hover, .icon:hover,  .actions-btn:hover {
+    cursor: pointer;
+}
+
+
+
 .search-container {
     display:flex;
     flex-direction: row;
